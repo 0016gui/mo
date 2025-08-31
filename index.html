@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o amor da minha vida </title>
+
+    <style>
+        body{
+            background-color: rgb(190, 39, 183);
+        }
+
+        .painel{
+            margin: auto;
+            background-color: white;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #sim{
+            height: 40px;
+            width: 60px;
+            background-color: rgb(190, 39, 183);
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: -50px;
+        }
+        #nao{
+            position: absolute;
+            height: 40px;
+            width: 60px;
+            background-color: rgb(190, 39, 183);;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: 10px;
+
+         
+        }
+
+        .amor img{
+        
+            width: 350px;
+            height: 350px;
+            display: flex;
+            margin: 350px;
+            margin-top: -350px;
+            margin-left: 215px;
+            display: inline-block   ;
+            border-radius: 30px;
+            border: 2px solid white;
+            
+            
+         }
+       #img2 {
+     
+        position: relative;
+        left: 100px;
+       }
+
+       #img4{
+        position: relative;
+        left: 100px;
+       }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="painel">
+        <h1> Te amo denguinhoo</h1>
+
+        <img src="https://i.pinimg.com/originals/73/61/02/73610287d0e369bb78aaa1c93b5be678.gif" alt="">
+
+        <h2>Quer viver comigo pra sempre?</h2>
+        
+
+        <a href="https://i.pinimg.com/736x/af/be/ba/afbebacf4e4b75ec64fd790f73b69007.jpg"><button id="sim" > Sim! </button></a>
+        <button onmouseover="fuja()" id="nao"> Não! </button>
+        
+    </div>
+    
+ <div class="amor">  
+<img class="img1" src="img/Imagem do WhatsApp de 2025-08-31 à(s) 18.13.52_29313561.jpg" alt="">
+<img id="img2" src="img/Imagem do WhatsApp de 2025-08-31 à(s) 18.13.53_0bec48ba.jpg" alt="">
+<img id="img3" src="img/Imagem do WhatsApp de 2025-08-31 à(s) 18.13.53_a0ed8ab7.jpg" alt="">
+<img id="img4" src="img/Imagem do WhatsApp de 2025-08-31 à(s) 18.13.53_eb689d42.jpg" alt="">
+</div> 
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+
+
+        }
+    </script>
+
+
+
+    
+</body>
+</html>
